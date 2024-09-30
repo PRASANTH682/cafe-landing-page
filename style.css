@@ -1,0 +1,212 @@
+:root{
+    --bg-color:#3A4A58;
+    --header-color:#fff;
+    --header-secondary-color:#996633;
+    --table-row-bgcolor:#C4CDD6;
+    --table-row-bgcolor-secondary:#E5E8ED;
+    --table-text-color:rgb(56, 54, 54);
+    --table-text-color-secondary:gray;
+    --body-font:"Open Sans", Arial, sans-serif;
+}
+body{
+    background-color: var(--bg-color);
+    font-family: var(--body-font);
+}
+/* Header Css Start*/
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.content-center{
+    justify-content:center;
+}
+.logo svg{
+    fill: white;
+    width: 40px;
+    height: 35px;
+    margin-right: 15px;
+}
+.logo-container h1{
+    color:var(--header-color);
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.logo-container{
+    padding: 32px 0px;
+    background-color: var(--bg-color);
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+/* Header Css End*/
+
+/* Main Css */
+/* Menu Css Start */
+main{
+    background-color: var(--header-color);
+}
+.menu{
+    text-align: center;
+    padding-top: 10px;
+}
+.menu .h2{
+    margin: 40px 0 25px 0px;
+}
+.h2{
+    color: var(--header-secondary-color);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 70px 0 25px 0px;
+}
+.main-center{
+    width: 95%;
+    margin: 0 auto;
+}
+.menu table{
+    border-collapse: collapse;
+}
+.menu table td,th{
+    padding: 10px;
+}
+.menu table th{
+    font-size: 1.2rem;
+    color: var(--table-text-color);
+    background-color: var(--table-row-bgcolor);
+    font-weight: 400;
+}
+.menu table td{
+    color: var(--table-text-color-secondary);
+}
+.menu table tr:nth-child(even){
+    background-color: var(--table-row-bgcolor-secondary);
+}
+.menu table tr td:first-child{
+    text-align: start;
+}
+/* Menu Css End */
+
+/* Special Iitem css Start */
+.special-item{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.special-items-imges{
+    gap: 2rem;
+}
+.special-img img{
+    width: 100%;
+}
+.special-img h3{
+    padding: 25px 0 8px 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--table-text-color);
+}
+.special-img p{
+    font-size: 1.08rem;
+    color: var(--table-text-color);
+}
+.hr{
+    width: 60%;
+    height: 2px;
+    background-color: rgb(206, 200, 200);
+    border: none;
+    margin: auto;
+}
+/* Special Iitem css End */
+
+/* About Css Start */
+.end-main-center{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-end-h2{
+    margin: 35px 0px 25px 0;
+    text-align: center;
+}
+.about-cafe p{
+    letter-spacing:0.7px;
+    color: var(--table-text-color-secondary);
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+.about-cafe .para{
+    margin-bottom:2rem;
+}
+/* About Css End */
+
+/* Talk to us css Start */
+.talk-to-us .h2 {
+    text-align: center;
+}
+.talk-to-us p{
+    color:var(--table-text-color-secondary);
+    padding-bottom: 1.7rem;
+}
+.talk-to-us p span{
+    color: #000;
+    font-weight: bold;
+}
+.talk-to-us .social-icons svg{
+    height: 20px;
+    width: 20px;
+    fill:var(--header-color);
+}
+.icon{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--table-row-bgcolor);
+}
+.social-icons{
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+/* Talk to us css End */
+
+/* Footer Css Staet */
+footer{
+    text-align: center;
+    color: var(--header-color);
+    padding: 2rem 0 2.5rem 0;
+    font-size: 0.7;
+    letter-spacing: 0.5px;
+}
+/* Footer Css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width:652px) {
+    .container{
+        width: 98%;
+    }
+    .logo-container h1{
+        font-size: 2rem;
+    }
+    .special-img{
+        width: 100%;
+    }
+    .special-items-imges{
+        flex-direction: column;
+    }
+}
